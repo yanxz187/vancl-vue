@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/shopping.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        购物车
+    </header>
+    <!-- 购物车信息 -->
+    <section>
+        <div class="sec_top">
+            <div class="top_left">
+                <input type="checkbox" class="quanxuan">
+                <span>在售</span>
+            </div>
+            <div class="top_right">
+                <span class="remove">删除</span>
+            </div>
+        </div>
+        <ul class="shopping_list">
+            <li>
+                <a href="product.html">
+                    <input type="checkbox" name="" class="checkbox">
+                    <img src="img/shopping_img.png" alt="">
+                    <div class="shopping_info">
+                        <p class="title">凡客衬衫 吉国武 免烫 温莎领 4.0 白色</p>
+                        <p class="info">颜色：蓝色 尺码：M</p>
+                        <p class="price">
+                            <span>特惠</span>
+                            <span>¥ 298.00</span>
+                            <span>¥ 398.00</span>
+                        </p>
+                    </div>
+                </a>
+                <p class="count">
+                    <span>-</span>
+                    <span>1</span>
+                    <span>+</span>
+                </p>
+            </li>
+            <li>
+                <a href="product.html">
+                    <input type="checkbox" name="" class="checkbox">
+                    <img src="img/shopping_img.png" alt="">
+                    <div class="shopping_info">
+                        <p class="title">凡客衬衫 吉国武 免烫 温莎领 4.0 白色</p>
+                        <p class="info">颜色：蓝色 尺码：M</p>
+                        <p class="price">
+                            <span>特惠</span>
+                            <span>¥ 298.00</span>
+                            <span>¥ 398.00</span>
+                        </p>
+                    </div>
+                </a>
+                <p class="count">
+                    <span>-</span>
+                    <span>1</span>
+                    <span>+</span>
+                </p>
+            </li>
+            <li>
+                <a href="product.html">
+                    <input type="checkbox" name="" class="checkbox">
+                    <img src="img/shopping_img.png" alt="">
+                    <div class="shopping_info">
+                        <p class="title">凡客衬衫 吉国武 免烫 温莎领 4.0 白色</p>
+                        <p class="info">颜色：蓝色 尺码：M</p>
+                        <p class="price">
+                            <span>特惠</span>
+                            <span>¥ 298.00</span>
+                            <span>¥ 398.00</span>
+                        </p>
+                    </div>
+                </a>
+                <p class="count">
+                    <span>-</span>
+                    <span>1</span>
+                    <span>+</span>
+                </p>
+            </li>
+            <li>
+                <a href="product.html">
+                    <input type="checkbox" name="" class="checkbox">
+                    <img src="img/shopping_img.png" alt="">
+                    <div class="shopping_info">
+                        <p class="title">凡客衬衫 吉国武 免烫 温莎领 4.0 白色</p>
+                        <p class="info">颜色：蓝色 尺码：M</p>
+                        <p class="price">
+                            <span>特惠</span>
+                            <span>¥ 298.00</span>
+                            <span>¥ 398.00</span>
+                        </p>
+                    </div>
+                </a>
+                <p class="count">
+                    <span>-</span>
+                    <span>1</span>
+                    <span>+</span>
+                </p>
+            </li>
+        </ul>
+        <div class="sec_bottom">
+            <div class="money">
+                <p class="zhifu">需支付:¥<span>0.00</span></p>
+                <p class="zonge">总额:¥<span>0.00</span></p>
+            </div>
+            <div class="jiesuan">
+                去结算(<span>0</span>)
+            </div>
+        </div>
+    </section>
+    <!-- 尾部 -->
+    <footer>
+        <a href="index.html"><span></span></a>
+        <a href="sort.html"><span></span></a>
+        <a href="video.html"><span></span></a>
+        <a href="shopping.html"><span></span></a>
+        <a href="my.html"><span></span></a>
+    </footer>
+</body>
+</html>
+<script src="js/tools.js"></script>
+<script>
+    // 购物车信息 js
+    let counts = $(".count");
+    let checkbox = $(".checkbox");
+    let quanxuan = $(".quanxuan")[0];
+    let checkboxArr;
+    for(let i = 0; i < counts.length; i ++){
+        // 减号点击事件
+        counts[i].children[0].onclick = function(){
+            let num = counts[i].children[1].innerHTML;
+            if(num > 1){
+                num --;
+                counts[i].children[1].innerHTML = num;
+            }
+            isChecked();
+        }
+        counts[i].previousElementSibling.firstElementChild.checked = "checked";       
+       // 加号点击事件
+        counts[i].children[2].onclick = function(){
+            let num = counts[i].children[1].innerHTML;
+            num ++;
+            counts[i].children[1].innerHTML = num;
+            isChecked();
+        }
+    }
+
+    isChecked();
+    isquanxuan();
+    // 判断当前的li的checkbox是否选中
+    function isChecked(){
+        checkboxArr = [];
+        let num = 0;
+        let money = 0.00;
+        let shuliang = {};
+        let danjia = {};
+        for(let i = 0; i < checkbox.length; i ++){
+            if(checkbox[i].checked){
+                checkboxArr.push(checkbox[i]);
+            }
+        }
+        
+        for(let j = 0; j < checkboxArr.length; j ++){
+            num += Number(checkboxArr[j].parentElement.nextElementSibling.children[1].innerHTML);
+            shuliang[j] = Number(checkboxArr[j].parentElement.nextElementSibling.children[1].innerHTML);
+            danjia[j] = Number(checkboxArr[j].nextElementSibling.nextElementSibling.children[2].children[1].innerHTML.substring(2));
+        }
+           
+        $(".jiesuan")[0].children[0].innerHTML = num;
+        for(let i in shuliang){
+            money += shuliang[i] * danjia[i];
+        }
+        $(".zhifu")[0].children[0].innerHTML = money;
+        $(".zonge")[0].children[0].innerHTML = money;
+    }
+    
+    // 给每个复选框添加事件
+    for(let i = 0; i < checkbox.length; i ++){
+        checkbox[i].onclick = function(){
+            isChecked();
+            isquanxuan();
+        };
+
+    }
+    function isquanxuan(){
+        if(checkboxArr.length == checkbox.length){
+            quanxuan.checked = "checked";
+        }else{
+            quanxuan.checked = "";
+        }
+    }
+    // 全选事件
+    quanxuan.onclick = function(){
+        for(let i = 0; i < checkbox.length; i ++){
+            if(this.checked){
+                checkbox[i].checked = "checked";
+            }else{
+                checkbox[i].checked = "";
+            }
+        }
+        isChecked();
+    }
+
+    // 删除事件
+    $(".remove")[0].onclick = function(){
+        for(let i = 0; i < checkboxArr.length; i ++){
+            checkboxArr[i].parentElement.parentElement.remove();
+        }
+        isChecked();
+    }
+</script>

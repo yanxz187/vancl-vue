@@ -1,0 +1,153 @@
+@charset "utf-8";
+.box{
+    -webkit-flex:1;
+    overflow-y: scroll;
+}
+/* 头部 */
+header{
+    width:100%;
+    height:1.67rem;
+    background: url(../img/bgimg.png);
+    background-size: cover;
+    position: relative;
+}
+header .shezhi{
+    display: block;
+    width:.2rem;
+    height:.2rem;
+    background: url(../img/order-icon.png);
+    background-size: .2rem;
+    float: right;
+    margin-top: .1rem;
+    margin-right: .15rem;
+}
+header .header_con{
+    width:3.45rem;
+    height:1.45rem;
+    background: #fff;
+    border-radius: 9px;
+    position: absolute;
+    top:.5rem;
+    left:.15rem;
+}
+.header_con a{
+    position: absolute;
+    top:-.15rem;
+    left:.15rem;
+    display: -webkit-flex;
+    align-items: center;
+}
+.header_con a img{
+    width:.68rem;
+    height:.68rem;
+    padding-right: .13rem;
+}
+.header_con a span{
+    font-size:13px;
+    color:#323232;
+    font-weight: 600;
+}
+.con_bottom{
+    display: -webkit-flex;
+    margin-top:.95rem;
+    margin-left: .17rem;
+    margin-right: .17rem;
+}
+.con_bottom div{
+    -webkit-flex:1;
+}
+.con_bottom div:nth-child(2){
+    border-left:2px solid #cccccc;
+    border-right:2px solid #cccccc;
+}
+.con_bottom div h3{
+    font-size: 10px;
+    color:#6f6f6f;
+    text-align: center;
+    line-height: 10px;
+    padding-top: 3.5px;
+    padding-bottom: .1rem;
+}
+.con_bottom div p{
+    font-size:10px;
+    color:#9d9d9d;
+    text-align: center;
+    line-height: 10px;
+    padding-bottom: 2px;
+}
+/* 我的订单 */
+.dingdan{
+    margin-top:.44rem;
+    background: #fff;
+}
+.dingdan_tit{
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    margin-left: .13rem;
+    margin-right: .13rem;
+    border-bottom:2px solid #ebebeb;
+    line-height: .37rem;
+}
+.dingdan_tit p{
+    font-size: 12px;
+    color:#333333;
+    font-weight: 600;
+}
+.dingdan_tit a{
+    font-size: 10px;
+    color:#a6a6a6;
+}
+.dingdan_bottom{
+    display: -webkit-flex;
+    margin-top: .2rem;
+    padding-bottom: .23rem;
+}
+.dingdan_bottom a{
+    width:25%;
+    text-align: center;
+}
+.dingdan_bottom a img{
+    width:.2rem;
+    height:.24rem;
+    margin: 0 auto;
+    padding-bottom: 7.5px;
+}
+.dingdan_bottom a span{
+    font-size: 9px;
+    color:#868686;
+    line-height:9px;
+    display: block;
+}
+.dingdan_bottom a span:nth-child(3){
+    margin-top: 4px;
+    color:#d85a56;
+}
+/* 我的服务 */
+.fuwu{
+    margin-top:.08rem;
+    background: #fff;
+    padding-bottom: 7px;
+}
+.fuwu .dingdan_bottom:nth-child(2){
+    margin-top: .2rem;
+}
+.fuwu .dingdan_bottom {
+    margin-top: .11rem;
+    padding-bottom: .11rem;
+    height:.51rem;
+}
+.fuwu .dingdan_bottom a img{
+    width:.23rem;
+    height:.23rem;
+}
+/* 在线客服 */
+.kefu{
+    background: #fff;
+  margin-top: 8px;
+  margin-bottom: .49rem;
+}
+.kefu .dingdan_bottom{
+    padding-top:.2rem;
+    margin-top: 0;
+    padding-bottom: .15rem;
+}

@@ -1,0 +1,602 @@
+<!DOCTYPE html> <html lang="zh-cn"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"> <title>凡客衬衫 吉国武 免烫 温莎领 4.0 白色</title> <link href="https://mi5.vanclimg.com/Content/H5/css/css.css?v1.1" rel="stylesheet" type="text/css" /> <style type="text/css">                                   
+        .wrap{max-width: 640px; margin: 0 auto; overflow: hidden; min-height: 100%; background-color: #fff; } /*底部导航栏*/ .nav{position: fixed; bottom: 0; max-width: 640px; width: 100%; height: 3rem; border-top: 1px solid #999; overflow: hidden; background: #fff; z-index: 999} .nav a {position: relative; width: 50%; height: 100%; float: left; color: #999; text-align: center; } .nav a span{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); width: 3rem; height: 2.4rem; background-image: url(http://i7.m.vancl.com/oms/2016_12_14_17_59_33_7590_60x800.jpg); background-repeat: no-repeat; background-size: 3rem 40rem; overflow: hidden; } .nav .goods-num,.nav .goods-num-active{font-size: 0.8rem; position: absolute; top: 0.1rem; right: 6.5rem; padding: 0 0.2rem; height: 1rem; display: inline-block; line-height: 1.1rem; color: #fff; border-radius: 1.1rem; background: none; background-color: #b81c22; cursor: default; text-align: center; }.nav .nav-shopcart{background-position: 0rem -12rem; } .nav .nav-shopcart-active{background-position: 0rem -32rem; } .nav .addToCart{width: 100%; height: 100%; line-height: 3rem; color: #fff; background: none; background-color: #b81c22; font-size: 1.2rem; }  /*头部标题栏*/ .topTitle{position: relative; top: 0; max-width: 640px; width: 100%; height: 4rem; overflow: hidden; background: #b81c22; text-align: center; line-height: 4rem;} .topTitle .topBack{position: absolute; top: 50%; left: 2rem; transform: translateY(-50%) rotate(45deg); -webkit-transform: translateY(-50%) rotate(45deg); width: 1.4rem; height: 1.4rem; border-bottom: 2px solid #fff;border-left: 2px solid #fff;cursor: pointer; } .topTitle .curTitle{display: inline-block; margin: 0 auto; font-size: 1.5rem; color: #fff;s } /*内容部分*/ .others-content{position: relative; top: 0rem; margin-bottom: 4.25rem; max-width: 640px; width: 100%; height: 100%; background-color: #fff; line-height: 1.5;}
+         }
+    </style> <style>
+        .wrap, .login, .footer {background: #fff; }
+        .login, .footer {background: #f5f5f5; }
+        td {line-height: 0; }
+        #prd-des-cont img{display:block;}
+        .tableWrap {margin:0 auto; width: 99%; height: auto; overflow: hidden;}
+        .tableWrap table {position: relative; width:98%;left: 0; word-break: keep-all; border-collapse:collapse; border:solid #ddd; border-width:1px 0px 0px 1px; margin: 5px auto;font-family: -webkit-body;white-space: nowrap; }
+        .tableWrap table td{text-align: center;color:#655C5C; border:solid #ddd; border-width:0px 1px 1px 0px; line-height: 2em; height: 2em; font-size: 1rem;}
+        .tagFlag{background-color:#fff;height:1px;}
+        .box {position: fixed; top: 0; left:0; z-index: 999; width:100%;background-color: #fff;border-bottom:1px solid #666}
+        .prd-des{margin:0;padding:0;}
+        .prd-ul{margin:1.5em auto;}
+        .prd-ul li {width: 33%;}
+        .prd-des ul {display: block; }
+        .prd-des li{padding: 0; }
+        .black{color:#4c4c4c}
+        #ajaxFlag{width:100%;height:1em;}
+        #ajaxContent{width:100%;}
+        .tagmao{padding-top:4.7em;}
+        .tagmaoHigh{padding-top:9.4em;}
+        .preSaleFlag{background-color:#A10000;color:#fff;border-radius:0.15em;display: inline; padding: 0.1em 0.1em; margin-right: 0.5em;}
+        .preMoney{margin-left:0.8em;color:#b81b22;}
+        .preSaleWarning{margin: 1.5em 2em 0 2em;color: #b81b22;line-height: 1.5em;}  
+        
+        /*评论图片*/
+        .commentPics{margin-top: 0.5rem;overflow: hidden;}    
+        .comment .commentPics li{width: 5.3rem; height: 5.3rem; float: left; margin: 0 .48em .5em 0; background-color: #fff; display: -webkit-box; -webkit-box-align: center; -webkit-box-pack: center; display: -ms-flexbox; -ms-flex-pack: center; -ms-flex-align: center;}
+        .comment .commentPics img{max-width: 100%; max-height: 100%;}
+        .comment .review-uInfo{margin-bottom:.5rem;}
+        .comment .comment-reply{padding: 5px; background-color: #f2f2f2;}
+        .comment .vancl-reply{color: #b81c22;}
+
+        /*全屏显示评论图片*/
+        .showFScreenImg{position: fixed; top: 0; left: 0; z-index: 1000; width: 100%; height: 100%; display: none; -webkit-box-align: center; -webkit-box-pack: center; display: -ms-flexbox; -ms-flex-pack: center; -ms-flex-align: center; background-color: #000; }
+        .showFScreenImg > img{max-width: 100%; max-height: 100%;}
+        
+        /*hwgStyle*/
+        .hwg-box{background-color: #ededef; } 
+        .hwg-box .hwg-illustration{background-color: #fff; margin:0.5rem 0; padding: 0.5rem 0 0.5rem 1rem; }
+        .hwg-box .hwg-band-info{text-align: center; margin: 0;}
+        .hwg-band-info span{position: relative;display: inline-block; width: 32%; }
+        .hwg-band-info span:before{position: absolute; margin-left: -2rem; content: ""; width: 1.75rem; height: 1.5rem; background:url(http://i10.m.vancl.com/Content/H5/img/hwg-icons.png) no-repeat center; background-size: cover; }
+        .hwg-band-info span:nth-of-type(1):before{background-position: center 0; }
+        .hwg-band-info span:nth-of-type(2):before{background-position: center -1.5rem; }
+        .hwg-band-info span:nth-of-type(3):before{background-position: center -3rem; }
+        .hwg-tips .hwg-rmb-icon{margin-left: 2rem;}
+        .hwg-tips .hwg-rmb-icon:before{content: ''; position: absolute; margin-left: -2rem; width: 1.75rem; height: 1.5rem; display: inline-block; background: url(http://i10.m.vancl.com/Content/H5/img/hwg-icons.png) no-repeat center; background-position: center -4.5rem; background-size: cover; }
+        .hwg-tips .hwg-rules-btn{background-color: #ca322e; color: #fff; padding: 0 0.2rem; border-radius: 0.2rem; float: right; margin-right: 1rem; cursor: pointer; }
+        .hwg-box .hwg-rules-detail{display: none; padding: 1rem; font-size: 0.8rem; line-height: 1.8;} 
+        .hwg-rules-detail ul{counter-reset: li; }
+        .hwg-rules-detail ul li:before{counter-increment: li; content: counter(li)"、"; }
+        .prd-tit .hwg-label {color: #4c4c4c; font-size: 1.2em;}
+        
+         </style> <link href="../../../Content/H5/css/swiper.min.css" rel="Stylesheet" /> <style>
+        .swiper-slide {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0.5em 3.2em 0 3.2em; }
+        .no-order {height: 30em; padding: 0px; overflow: hidden; margin-top: 0.1em; background-color: #fff; }
+        .no-order span {font-size: 1.4em; margin-top: 8em; display: block; text-align: center; color: #a7a7a7; }
+
+        /*视频播放*/
+        .video-icon{position: absolute; left: 1rem; bottom: 0.5rem; z-index: 10; height: 2rem; color: #b81c22; border: 1px solid; border-radius: 2rem; background-color: #fff;box-sizing: border-box;}
+        /* .video-icon .mv-icon{display: inline-block; width: 2.5rem; height: 2.5rem; border: 1px solid; border-radius: 50%; vertical-align: middle; margin-top: -0.3rem; margin-left: -0.1rem; background-color: #fff; } */
+        .video-icon .mv-icon{display: inline-block; width: 2.8rem; height: 2.8rem; border-radius: 50%; vertical-align: middle; margin-top: -0.5rem; margin-left: -0.1rem; background: url(http://i5.vanclimg.com/cms/20170905/start.png) #fff no-repeat center top; background-size: cover; }
+        /* .video-icon .mv-icon >i {display: inline-block; width: 0px; height: 0px; border: 0.6rem solid transparent; border-left: 1rem solid; position: relative; left: 0.9rem; top: 0.6rem; } */
+        .video-icon .v-duration{display: inline-block; padding: 0 0.5rem; }
+        .video-player{display: none; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 10; background-color: #fff; }
+        .video-player .video-close{position: absolute; top: 0; right: 0; font-size: 2rem; line-height: 1; color: #b81c22; padding: 0 0.5rem; }
+    </style> </head> <body> <div class="wrap"> <div class="topTitle"> <span id="topBack" class="topBack"></span> <span class="curTitle">商品详情</span> </div> <!-- 内容部分 --> <div class="others-content"> <div class="slider"> <div class="swiper-container" id="swiper-container"> <div class="swiper-wrapper"> <div class="swiper-slide"> <img class="lazyLoad" data-src="http://i.vanclimg.com/640/q80/product/6/3/7/6379500/big/6379500-1j201810191113348773.jpg" src="http://i.vanclimg.com/640/q80/product/6/3/7/6379500/big/6379500-1j201810191113348773.jpg"> </div> <div class="swiper-slide"> <img class="lazyLoad" data-src="http://i.vanclimg.com/640/q80/product/6/3/7/6379500/big/6379500-4201804101820212737.jpg" src="http://i.vanclimg.com/640/q80/product/6/3/7/6379500/big/6379500-4201804101820212737.jpg"> </div> <div class="swiper-slide"> <img class="lazyLoad" data-src="http://i.vanclimg.com/640/q80/product/6/3/7/6379500/big/6379500-5201803081144353369.jpg" src="http://i.vanclimg.com/640/q80/product/6/3/7/6379500/big/6379500-5201803081144353369.jpg"> </div> </div> <div class="swiper-pagination"> </div> </div> </div> <div class="prd-tit clear" id="prd-tit"> <span class="name">凡客衬衫 吉国武 免烫 温莎领 4.0 白色</span> <div> <span style="color: #c8161e; font-size: 1.2em; text-decoration: line-through; margin-right: 0.1em;">398元</span> <span style="color: #c8161e; font-size: 1.5em;">298元</span> </div> <div> <a href="/CashReCharge/index"><span style="color: #c8161e; font-size: 1.2em; margin-right: 1.5em;
+                    max-width: 16.5em;">充100返100，点击充值</span></a> </div> <div> <span style="color: #c8161e; font-size: 1.2em; margin-right: 1.5em; max-width: 16.5em;">充值购买更优惠</span> </div> <div class="bb"> </div> <ul style="margin-top: 8px;"> <li class="clear"> <div style="float: left;"> <span style="color: #fff; border-radius: 0.15em; margin-right: 5px; padding: 0.1em;
+                                background: #b81c22;">
+                                免邮</span></div> <div style="float: left; color: #717070; font-size: 1.2em; max-width: 19em;"> <span>全场购物满199元免运费 </span></div> </li> </ul> </div> <div class="bb mhr"></div> <div class="prd-size clear" id="prd-size"> <span class="chkbox"></span><span class="size-info" id="size-info">选择&nbsp;颜色/尺码</span><span
+        class="sword-r"></span> <input id="chooseSize" type="hidden" /> </div> <div class="size-box hide" id="size-box"> <h3 class="tit">
+        选择颜色</h3> <p class="color clear" id="color"> <span  onclick="getProductInfo('6379500',this);" class="size-color active">白色</span> <span  onclick="getProductInfo('6379501',this);" class="size-color">蓝色</span> <span  onclick="getProductInfo('6379502',this);" class="size-color">浅紫</span> <span  onclick="getProductInfo('6379503',this);" class="size-color">深蓝</span> <span  onclick="getProductInfo('6379504',this);" class="size-color">灰色</span> <span class="size-color disable">蓝色方格</span> <span  onclick="getProductInfo('6379506',this);" class="size-color">紫色方格</span> <span class="size-color disable">蓝底白条纹</span> <span class="size-color disable">灰底白条纹</span> <span class="size-color disable">蓝底细白条纹</span> <span class="size-color disable">藏蓝底细白条纹</span> <span  onclick="getProductInfo('6382339',this);" class="size-color">浅蓝</span> <span  onclick="getProductInfo('6382340',this);" class="size-color">黑色</span> <input id="chooseColor" type="hidden" value="白色" /> </p> <h3 class="tit">
+        尺码选择</h3> <input type="hidden" value="" id="sku" /> <p class="size clear" id="size"> <span onclick="chooseSize('15783706',this);" class="size-color">M</span> <span onclick="chooseSize('15783707',this);" class="size-color">L</span> <span onclick="chooseSize('15783708',this);" class="size-color">XL</span> <span onclick="chooseSize('15783709',this);" class="size-color">XXL</span> </p> <h3 class="tit">
+        购买数量</h3> <p class="changecount clear"> <span class="minus" onclick="changeNum(1)"></span><span id="num" class="num">1</span><span
+            onclick="changeNum(2)" class="plus"></span> </p> </div> <div class="bb mhr"></div> <div class="tagFlag" id="tagFlag"></div> <div class="prd-des" id="styleTag"> <ul class="clear prd-ul"> <li><a href="#tagmao0" class="active" onclick="changeActive(this);"> 商品详情 </a></li> <li onclick="getComments(this)">评论</li> <li onclick="getAsk(this)">咨询</li> </ul> </div> <div class="bb666"> </div> <input id="styleId" type="hidden" value="1068393" /> <input id="pCode" type="hidden" value="6379500" /> <input id="index" type="hidden" value="1" /> <input id="indexQ" type="hidden" value="1" /> <input id="jsonPicText" type="hidden" value="[{&quot;Id&quot;:2781,&quot;StyleId&quot;:0,&quot;TabName&quot;:&quot;商品详情&quot;,&quot;PicUrl&quot;:[&quot;https://mi1.vanclimg.com/oms/2018_10_19_11_8_55_3958_640x716.jpg&quot;,&quot;https://mi2.vanclimg.com/oms/2018_10_19_11_8_58_7087_640x553.jpg&quot;,&quot;https://mi2.vanclimg.com/oms/2018_10_19_11_8_58_7120_640x623.jpg&quot;,&quot;https://mi.vanclimg.com/oms/2018_10_19_11_8_58_1057_640x570.jpg&quot;,&quot;https://mi.vanclimg.com/oms/2018_10_19_11_8_59_1406_640x740.jpg&quot;,&quot;https://mi1.vanclimg.com/oms/2018_10_19_11_8_59_3391_640x720.jpg&quot;,&quot;https://mi1.vanclimg.com/oms/2018_10_19_11_8_59_3739_640x587.jpg&quot;,&quot;https://mi2.vanclimg.com/oms/2018_10_19_11_8_59_9312_640x730.jpg&quot;,&quot;https://mi2.vanclimg.com/oms/2018_10_19_11_9_0_9661_640x755.jpg&quot;,&quot;http://mimages.vancl.com/oms/2018_4_11_14_51_43_149_640x96.jpg&quot;,&quot;http://i4.m.vancl.com/oms/2018_4_11_14_51_46_4043_640x423.jpg&quot;,&quot;http://i5.m.vancl.com/oms/2018_4_11_14_51_46_5471_640x522.jpg&quot;,&quot;http://i3.m.vancl.com/oms/2018_4_11_14_51_46_3311_640x544.jpg&quot;,&quot;http://i6.m.vancl.com/oms/2018_4_11_14_51_46_6376_640x383.jpg&quot;,&quot;http://i5.m.vancl.com/oms/2018_4_11_14_51_46_5853_640x757.jpg&quot;,&quot;http://i8.m.vancl.com/oms/2018_4_11_14_51_47_8153_640x453.jpg&quot;,&quot;http://i5.m.vancl.com/oms/2018_4_11_14_51_47_5678_640x591.jpg&quot;,&quot;http://i1.m.vancl.com/oms/2018_4_11_14_51_47_1567_640x1108.jpg&quot;,&quot;http://i3.m.vancl.com/oms/2018_4_11_14_51_47_3551_640x608.jpg&quot;,&quot;http://i4.m.vancl.com/oms/2018_4_11_14_51_48_4980_640x445.jpg&quot;,&quot;http://i4.m.vancl.com/oms/2018_4_11_14_51_48_4456_640x406.jpg&quot;,&quot;http://mimages.vancl.com/oms/2018_4_11_14_51_48_345_640x439.jpg&quot;,&quot;http://i1.m.vancl.com/oms/2018_4_11_14_51_48_1773_640x391.jpg&quot;,&quot;http://i1.m.vancl.com/oms/2018_4_11_14_51_48_1250_640x407.jpg&quot;,&quot;http://i4.m.vancl.com/oms/2018_4_11_14_51_49_4315_640x396.jpg&quot;,&quot;http://i8.m.vancl.com/oms/2018_4_11_14_51_49_8567_640x442.jpg&quot;,&quot;http://i8.m.vancl.com/oms/2018_4_11_14_51_49_8044_640x570.jpg&quot;,&quot;http://i7.m.vancl.com/oms/2018_4_11_14_51_49_7520_640x340.jpg&quot;,&quot;http://i6.m.vancl.com/oms/2018_4_11_14_51_49_6997_640x482.jpg&quot;,&quot;http://i1.m.vancl.com/oms/2018_9_12_16_54_45_1696_640x838.jpg&quot;]}]" /> <div id="prd-des-cont" class="prd-des-cont clear"> <div id="autoChangeContent"> <div id="tagmao0"> <img src="https://mi1.vanclimg.com/oms/2018_10_19_11_8_55_3958_640x716.jpg" data-original="https://mi1.vanclimg.com/oms/2018_10_19_11_8_55_3958_640x716.jpg" /> <img src="https://mi2.vanclimg.com/oms/2018_10_19_11_8_58_7087_640x553.jpg" data-original="https://mi2.vanclimg.com/oms/2018_10_19_11_8_58_7087_640x553.jpg" /> <img src="https://mi2.vanclimg.com/oms/2018_10_19_11_8_58_7120_640x623.jpg" data-original="https://mi2.vanclimg.com/oms/2018_10_19_11_8_58_7120_640x623.jpg" /> <img src="https://mi.vanclimg.com/oms/2018_10_19_11_8_58_1057_640x570.jpg" data-original="https://mi.vanclimg.com/oms/2018_10_19_11_8_58_1057_640x570.jpg" /> <img src="https://mi.vanclimg.com/oms/2018_10_19_11_8_59_1406_640x740.jpg" data-original="https://mi.vanclimg.com/oms/2018_10_19_11_8_59_1406_640x740.jpg" /> <img src="https://mi1.vanclimg.com/oms/2018_10_19_11_8_59_3391_640x720.jpg" data-original="https://mi1.vanclimg.com/oms/2018_10_19_11_8_59_3391_640x720.jpg" /> <img src="https://mi1.vanclimg.com/oms/2018_10_19_11_8_59_3739_640x587.jpg" data-original="https://mi1.vanclimg.com/oms/2018_10_19_11_8_59_3739_640x587.jpg" /> <img src="https://mi2.vanclimg.com/oms/2018_10_19_11_8_59_9312_640x730.jpg" data-original="https://mi2.vanclimg.com/oms/2018_10_19_11_8_59_9312_640x730.jpg" /> <img src="https://mi2.vanclimg.com/oms/2018_10_19_11_9_0_9661_640x755.jpg" data-original="https://mi2.vanclimg.com/oms/2018_10_19_11_9_0_9661_640x755.jpg" /> <img src="http://mimages.vancl.com/oms/2018_4_11_14_51_43_149_640x96.jpg" data-original="http://mimages.vancl.com/oms/2018_4_11_14_51_43_149_640x96.jpg" /> <img src="http://i4.m.vancl.com/oms/2018_4_11_14_51_46_4043_640x423.jpg" data-original="http://i4.m.vancl.com/oms/2018_4_11_14_51_46_4043_640x423.jpg" /> <img src="http://i5.m.vancl.com/oms/2018_4_11_14_51_46_5471_640x522.jpg" data-original="http://i5.m.vancl.com/oms/2018_4_11_14_51_46_5471_640x522.jpg" /> <img src="http://i3.m.vancl.com/oms/2018_4_11_14_51_46_3311_640x544.jpg" data-original="http://i3.m.vancl.com/oms/2018_4_11_14_51_46_3311_640x544.jpg" /> <img src="http://i6.m.vancl.com/oms/2018_4_11_14_51_46_6376_640x383.jpg" data-original="http://i6.m.vancl.com/oms/2018_4_11_14_51_46_6376_640x383.jpg" /> <img src="http://i5.m.vancl.com/oms/2018_4_11_14_51_46_5853_640x757.jpg" data-original="http://i5.m.vancl.com/oms/2018_4_11_14_51_46_5853_640x757.jpg" /> <img src="http://i8.m.vancl.com/oms/2018_4_11_14_51_47_8153_640x453.jpg" data-original="http://i8.m.vancl.com/oms/2018_4_11_14_51_47_8153_640x453.jpg" /> <img src="http://i5.m.vancl.com/oms/2018_4_11_14_51_47_5678_640x591.jpg" data-original="http://i5.m.vancl.com/oms/2018_4_11_14_51_47_5678_640x591.jpg" /> <img src="http://i1.m.vancl.com/oms/2018_4_11_14_51_47_1567_640x1108.jpg" data-original="http://i1.m.vancl.com/oms/2018_4_11_14_51_47_1567_640x1108.jpg" /> <img src="http://i3.m.vancl.com/oms/2018_4_11_14_51_47_3551_640x608.jpg" data-original="http://i3.m.vancl.com/oms/2018_4_11_14_51_47_3551_640x608.jpg" /> <img src="http://i4.m.vancl.com/oms/2018_4_11_14_51_48_4980_640x445.jpg" data-original="http://i4.m.vancl.com/oms/2018_4_11_14_51_48_4980_640x445.jpg" /> <img src="http://i4.m.vancl.com/oms/2018_4_11_14_51_48_4456_640x406.jpg" data-original="http://i4.m.vancl.com/oms/2018_4_11_14_51_48_4456_640x406.jpg" /> <img src="http://mimages.vancl.com/oms/2018_4_11_14_51_48_345_640x439.jpg" data-original="http://mimages.vancl.com/oms/2018_4_11_14_51_48_345_640x439.jpg" /> <img src="http://i1.m.vancl.com/oms/2018_4_11_14_51_48_1773_640x391.jpg" data-original="http://i1.m.vancl.com/oms/2018_4_11_14_51_48_1773_640x391.jpg" /> <img src="http://i1.m.vancl.com/oms/2018_4_11_14_51_48_1250_640x407.jpg" data-original="http://i1.m.vancl.com/oms/2018_4_11_14_51_48_1250_640x407.jpg" /> <img src="http://i4.m.vancl.com/oms/2018_4_11_14_51_49_4315_640x396.jpg" data-original="http://i4.m.vancl.com/oms/2018_4_11_14_51_49_4315_640x396.jpg" /> <img src="http://i8.m.vancl.com/oms/2018_4_11_14_51_49_8567_640x442.jpg" data-original="http://i8.m.vancl.com/oms/2018_4_11_14_51_49_8567_640x442.jpg" /> <img src="http://i8.m.vancl.com/oms/2018_4_11_14_51_49_8044_640x570.jpg" data-original="http://i8.m.vancl.com/oms/2018_4_11_14_51_49_8044_640x570.jpg" /> <img src="http://i7.m.vancl.com/oms/2018_4_11_14_51_49_7520_640x340.jpg" data-original="http://i7.m.vancl.com/oms/2018_4_11_14_51_49_7520_640x340.jpg" /> <img src="http://i6.m.vancl.com/oms/2018_4_11_14_51_49_6997_640x482.jpg" data-original="http://i6.m.vancl.com/oms/2018_4_11_14_51_49_6997_640x482.jpg" /> <img src="http://i1.m.vancl.com/oms/2018_9_12_16_54_45_1696_640x838.jpg" data-original="http://i1.m.vancl.com/oms/2018_9_12_16_54_45_1696_640x838.jpg" /> </div> </div> <div id="ajaxFlag"></div> <div id="ajaxContent"></div> </div> <div id="over-lay" class="over-lay hide" style="position: fixed; top: 50%; left: 50%;
+    -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); z-index: 999;
+    background: rgba(0,0,0,0.5); padding: 1em 2em; text-align: center; border-radius: 2px;
+    width: 50%;"> <p id="tips-txt" class="tips-txt" style="color: #fff; text-align: center; font-size: 1.5em;"> </p> </div> <!-- 全屏显示评论图片 --> <div class="showFScreenImg" id="showFScreenImg"> <img src="" alt="" /> </div> </div> <!-- 底部导航栏 --> <div id="nav" class="nav clear"> <a href="/shoppingCar/GetShoppingCarts#nav_shopcart"><span id="nav-shopcart" class="nav-shopcart"></span> <i id="pcount" class="goods-num">0</i> </a> <a href="javascript:void(0)"><span id="addToCart" class="addToCart">加入购物车</span></a> </div> </div> <script src="https://mi5.vanclimg.com/Content/H5/js/zepto.min.js"></script> <script src="https://mi5.vanclimg.com/Content/H5/js/h5trace.min.js?v1.2" defer></script> <script type="text/javascript" src="https://lkme.cc/js/linkedme.min.js"></script> <script type="text/javascript">
+        /*客户端去头js start*/
+        Zepto(function ($) {
+            var bIsAndroid = false;
+            var bIsIOS = false;
+            if ("object" == typeof (AndroidEnv)) {
+                // 判断是在Android环境中
+                bIsAndroid = true;
+            }
+            // IOS code: window.webkit.messageHandlers.OOXX.postMessage("Hello WebKit!")
+            else if ("object" == typeof (window.webkit)
+                    && "object" == typeof (window.webkit.messageHandlers)
+                    && "object" == typeof (window.webkit.messageHandlers.IOSEnv)
+                    && "function" == typeof (window.webkit.messageHandlers.IOSEnv.postMessage)) {
+                // 判断是在IOS环境中
+                bIsIOS = true;
+            } else {
+                // 判断不是Android或者Ios
+            }
+            function hideHeaderFooter() {
+                $(".topTitle").css('display', 'none');
+                //$(".nav").css('display', 'none'); //隐藏单品页加入购物车导航
+            }
+            if (bIsAndroid || bIsIOS) {                   // Android IOS 环境下，去掉页头页尾
+                hideHeaderFooter();
+            }
+        });
+        /*客户端去头js end*/
+
+    Zepto(function($) {
+
+    
+
+        // 初始化头部状态栏
+        // (function(){})(window);
+        $("#topBack").on('click', function(event) {
+            event.preventDefault();
+            window.history.back();
+            /* Act on the event */
+        });
+
+        //激活底部导航栏目标元素
+        (function(){
+            var targetHrefHash = window.location.hash;
+            var targetHref = window.location.pathname=="/"? true:false;
+            switch(targetHrefHash){
+                case "":
+                if (targetHref) {
+                    $("#nav-home").attr('class', 'nav-home-active');
+                }
+                break;
+                case "#nav_search":
+                $("#nav-search").attr('class', 'nav-search-active');
+                break;
+                case "#nav_Tshirt":
+                $("#nav-Tshirt").attr('class', 'nav-Tshirt-active');
+                break;
+                case "#nav_shopcart":
+                $("#nav-shopcart").attr('class', 'nav-shopcart-active');
+                break;
+                case "#nav_me":
+                $("#nav-me").attr('class', 'nav-me-active');
+                break;
+                default:
+                var childs = $("#nav").children().find('span');
+                for (var i = childs.length - 1; i >= 0; i--) {
+                    var child = childs[i];
+                    var childClass = $(child).attr("class");
+                    var hasActiveClass = childClass.indexOf("active")>0? true:false;
+                    var deactiveClass = childClass.substring(0,childClass.indexOf("active")-1);
+                    if(hasActiveClass){
+                        $(child).attr("class",deactiveClass);
+                        break;
+                    }
+                }
+            }
+        })(window);
+    });
+    </script> <script type="text/javascript" src="https://mi5.vanclimg.com/Content/H5/js/swiper.min.js?v3.1.0"></script> <script type="text/javascript">
+        var mySwiper=null;
+        var tagsArr=[];   
+        Zepto(function ($) {
+                mySwiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                loop: true
+            });
+
+            /*play product video*/
+           /* function initVDuration(){
+                var vDuration = $('.slider').find('#pdt-video').get(0).duration,
+                    mins = Math.floor(vDuration%60)>10? Math.floor(vDuration%60) : '0' + Math.floor(vDuration%60),
+                    secs = Math.round(vDuration/60)>10? Math.round(vDuration/60): '0' + Math.round(vDuration/60),
+                    vDurationText = mins + '&apos;' + secs + '&quot;';
+                $('.slider').find('#v-duration').html(vDurationText);
+            }
+            initVDuration();*/
+
+            $('.slider').on('click', '#video-icon', function(event) {
+                $('#video-player').show();
+                $('#pdt-video').get(0).play();
+                $('#pdt-video').get(0).onended = function(){
+                    $('#video-player').hide();
+                };
+            });
+            $('.slider').on('click','#video-close', function(event) {
+                $('#video-player').hide();
+                $('#pdt-video').get(0).pause();
+            });
+
+
+            $("#prd-size").on('click', function (event) {
+                $("#size-box").toggle();
+            });
+            var picData=$.trim($("#jsonPicText").val());
+            if(picData.length<=0){
+                // getPicDetail($('.active'));
+                trimPicTxt();
+            }
+            tagsArr=$("#styleTag li a");
+            window.addEventListener('touchstart', function (ev1) {
+                window.addEventListener('touchend', function (ev3) {
+                    floatTag();
+                    autoChangeTag();
+                });
+            });
+            window.addEventListener('scroll',function(ev){ 
+                floatTag();
+                autoChangeTag();
+            });
+
+            
+        });
+        function floatTag(){
+                 var tagTopHeight=document.getElementById("tagFlag").offsetTop;
+                    var scrollHeight=document.documentElement.scrollTop||document.body.scrollTop;
+                    if(scrollHeight >= tagTopHeight){
+                            $("#styleTag").removeClass("prd-des").addClass("prd-des box");                            
+                        }else{
+                            $("#styleTag").removeClass("prd-des box").addClass("prd-des");
+                            $(".tagmao").removeClass("tagmao");
+                            $(".tagmaoHigh").removeClass("tagmaoHigh");
+                        }
+            }
+        function autoChangeTag(){
+            if($("#autoChangeContent").css("display")==="none")
+            {
+                return;
+            }
+            var scrollHeight=document.documentElement.scrollTop||document.body.scrollTop;            
+            var Arr=$("#styleTag li a");            
+            var len=Arr.length;
+            if(len==0){
+                return;
+            }
+            if(scrollHeight < $("#styleTag").height()){
+                $("#ajaxContent").html("");
+                $("#styleTag li").removeClass("active").addClass("black"); 
+                Arr.removeClass("active").addClass("black");    
+                $(Arr[0]).removeClass("black").addClass("active");
+                return;
+            }
+            for(var i=len-1;i>=0;i--){
+                var id=$(Arr[i]).attr("href");
+                var compare=$(id).offset().top;
+                if($("#styleTag").hasClass("box")){
+                    compare=compare-$("#styleTag").height();
+                }
+                if(scrollHeight+2 >= compare){ 
+                    $("#ajaxContent").html("");
+                    $("#styleTag li").removeClass("active").addClass("black"); 
+                    Arr.removeClass("active").addClass("black");    
+                    $(Arr[i]).removeClass("black").addClass("active");
+                    break;
+                }
+            }
+        }
+        function changeActive(t){
+            $("#autoChangeContent").show();
+            var id=$(t).attr("href");
+            if($(id).offset().top >= $("#tagFlag").offset().top ){
+                if($("#styleTag").hasClass("box")){
+                    $(id).addClass("tagmao");
+                }else{
+                    $(id).addClass("tagmaoHigh");
+                }
+            }
+            $("#styleTag li").removeClass("active").addClass("black");
+            if(tagsArr.length>0){
+                tagsArr.removeClass("active").addClass("black");
+            }
+            $(t).removeClass("blcak").addClass("active");
+        }
+        function autoChangeScroll(){
+            document.body.scrollTop=parseInt($("#tagFlag").offset().top)-2;
+            document.documentElement.scrollTop=parseInt($("#tagFlag").offset().top)-2;
+        }
+        function trimPicTxt(){
+            var imgs= $("#prd-des-cont").find("img");
+            var a=null;
+            for (var i = 0; i < imgs.length; i++) {
+                $(imgs[i]).attr('width','100%');
+                $(imgs[i]).attr('height','auto');
+                a=imgs[i].parentElement;
+                if(a.tagName=="A"){
+                    a.parentElement.removeChild(a);
+                }else{
+                    imgs[i].src= $(imgs[i]).attr("data-original");
+                }
+            }
+        }
+
+        function getProductInfo(pCode,obj) {
+            if (pCode != ""){
+                $("#pCode").val(pCode);
+                $(obj).addClass("active");
+                $(obj).siblings().removeClass("active");//选择&nbsp;颜色/尺码
+                $("#chooseColor").val($(obj).html());
+                $("#chooseSize").val('');
+                $("#size-info").html("选择&nbsp;颜色/尺码");
+                $.ajax({
+                    type: "GET",
+                    url: "/Style/AjaxGetStyleDetail",
+                    data: "pcode=" + pCode,
+                    dataType: "text",
+                    success: function (textstr) {
+                        var s = $("<div>" + textstr + "</div>");
+                        var productpic = s.children()[0];
+                        var producttit=s.children()[1];
+                        var productsize = s.children()[2];
+                        $("#swiper-container .swiper-wrapper").html(productpic.children[0].innerHTML)
+                        mySwiper.init();
+                        $("#prd-tit").html(producttit.innerHTML);
+                        $("#size").html(productsize.innerHTML);    
+
+                        initVAppLink(); // 改变openVanclApp href                   
+                    }
+                });
+            }
+            return false;
+        };
+        function chooseSize(sku,obj){
+            $(obj).siblings().removeClass("active");
+            $(obj).addClass("active");
+            var color= $("#chooseColor").val();
+            var size= $(obj).html();
+            $("#size-info").html("已选:"+color+","+size+"码");
+            $("#chooseSize").val(size);
+            $("#sku").val(sku);
+            return false;
+        };
+        function changeNum(obj){
+            var num=parseInt($("#num").html());
+            if(obj=="1"){  
+                num=num<=1?num:num-1;
+            }else{
+                num+=1;
+            }
+            $("#num").html(num);
+        };
+
+        $('#addToCart').on('click', function(event) {
+            event.preventDefault();
+            addToCart();
+        });
+
+        function addToCart(){
+            var color=$("#chooseColor").val();
+            var size=$("#chooseSize").val();
+            var num=parseInt($("#num").html());
+            if(!num||num==undefined||num<1){showTips("请选择购买数量");return false;}
+            if(!color||color==undefined){showTips("请选择颜色和尺寸");return false;}
+            if(!size||size==undefined){showTips("请选择颜色和尺寸");return false;}
+            var sku=$("#sku").val();
+            $("#addCart").hide();
+            $("#adding").show();
+            $.ajax({
+                data: { clotheCode: sku, num: num, sync: true },
+                url: "/ShoppingCar/add2cart",
+                dataType: "json",
+                success: function (data) {
+                    if(data.y==2){
+                        window.location.href="https://m.vancl.com/User/UserLogin?url=https%3a%2f%2fm.vancl.com%2fStyle%2fIndex%2f6379500";
+                    }
+                    else{
+                        num+=parseInt($("#pcount").html());
+                    $("#pcount").html(num);
+                        // showConfirm('商品已加入购物车','前往购物车','/shoppingCar/GetShoppingCarts');
+                        // $("#size-box").hide();
+                    }                    
+                }
+            });
+            
+        };
+
+        function getPicDetail(obj){
+            $("#tableWrap").show();
+            $(obj).siblings().removeClass("active");
+            if(tagsArr.length>0){
+                tagsArr.removeClass("active").addClass("black");
+            }
+            $(obj).addClass("active");
+            var styleId= $("#styleId").val();
+            var productCode = $("#pCode").val();
+            $.ajax({
+                data:{styleId:styleId,productCode:productCode},
+                url:"/Style/AjaxGetPicText",
+                dataType:"text",
+                success:function(data){
+                    //$("#prd-des-cont").html(data);
+                    $("#autoChangeContent").hide();
+                    $("#ajaxContent").html(data);
+                    autoChangeScroll();
+                    floatTag();
+                    trimPicTxt();
+                }
+
+            });
+        };
+        function getComments(obj){
+              $("#tableWrap").hide();
+              $(obj).siblings().removeClass("active");
+              if(tagsArr.length>0){
+                tagsArr.removeClass("active").addClass("black");
+              }
+              $(obj).addClass("active");
+              var html='';
+              var index=parseInt($("#index").val());
+              var styleId=parseInt($("#styleId").val());
+              $.post('/ajax/GetProductComment/',{'id':styleId,'index':index,'size':5},function(data){
+                    $.each(data,function(index,item){
+                        html+='<div class="comment"><p class="review-uInfo clear"><span class="name">来自:'+item.UserName+'</span><span class="date">'+item.AddTime+'</span></p><p class="cont">'+item.Content+'</p>'+createCommentPicHtmlStr(item.CommentPics);
+                        if(item.CommentReply && item.CommentReply.Content){ //是否有官方回复
+                            html += '<p class="comment-reply"><span class="vancl-reply">官方回复：</span><span>'+ item.CommentReply.Content +'</span></p>';
+                        }
+                        html += '</div>';    
+                    });
+                    if(data.length==5){
+                        html+='<div id="more" class="more"><a id="getMore" href="javascript:;" onclick="getMoreCommont()">查看更多</a><a id="getLoading" class="hide" href="javascript:;" >加载中...</a></div>';
+                    }
+                    //$("#prd-des-cont").html(html);
+                    $("#autoChangeContent").hide();
+                    $("#ajaxContent").html(html);
+                    autoChangeScroll();
+                    floatTag();
+                    showFScreenImg(); //绑定评论图片全屏显示
+              });
+
+        };
+        function createCommentPicHtmlStr(commentPics)
+        {      
+            if(commentPics.length>0){
+                var returnStr = '<ul class="commentPics">';      
+                for(var i=0;i<commentPics.length;i++)
+                {
+                   returnStr += '<li><img src="'+commentPics[i].imgUrl+'"/></li>';
+                }
+                returnStr += '</ul>';
+                return returnStr;
+            }else{
+                return "";
+            }
+        }
+
+        function getAsk(obj){
+              $("#tableWrap").hide();
+              $(obj).siblings().removeClass("active");
+              if(tagsArr.length>0){
+                tagsArr.removeClass("active").addClass("black");
+              }
+              $(obj).addClass("active");
+              //subform
+              var form='<div class="subform"><h3 class="tit">我要咨询:</h3><div class="cont"><textarea id="cont" placeholder="您输入的字数不要超过60个字" max-length="60"></textarea></div><div class="sub"><a href="javascript:;" onclick="subAsk()" title="">提交</a></div></div>';
+              //$("#prd-des-cont").html(form);
+              $("#ajaxContent").html(form);
+              var html='';
+              var styleId=parseInt($("#styleId").val());
+              $.post('/ajax/GetProductQuestions/',{'id':styleId,'index':1,'size':5},function(data){
+                    $.each(data,function(index,item){
+                        html+='<div class="quest-wrap"><p class="question">问:'+item.Content+'</p></div><div class="questioninfo clear"><span class="name">用户:'+item.UserName+'</span><span class="date">'+item.AddTime+'</span></div><div class="rep-wrap"><p class="reply">'+item.retext+'</p></div>';
+                    });
+                    if(data.length==5){
+                        html+='<div id="more" class="more"><a id="getMore" href="javascript:;" onclick="getMoreQuestion()">查看更多</a><a id="getLoading" class="hide" href="javascript:;" >加载中...</a></div>';
+                    }
+                    //$("#prd-des-cont").append(html);
+                    $("#autoChangeContent").hide();
+                    $("#ajaxContent").append(html);
+                    autoChangeScroll();
+                    floatTag();
+              });
+              
+        };
+        function hide(){
+            $("#over-lay").hide();
+            return false;
+        };
+        function showTips(cont){
+            $("#tips-txt").html(cont);
+            $("#over-lay").show();
+            $("#size-box").show();
+            $("#tips-btn").empty();
+            setTimeout(cancel,3000);
+            return false;
+        };
+        function showConfirm(cont,txt,href){
+            $("#tips-txt").html(cont);
+            $("#tips-btn").html('<a href="'+href+'" style="display: block;color:#fff;margin: 0.6em 0 0 0;" >'+txt+'</a>');
+            $("#over-lay").show();
+            setTimeout(cancel,3000);
+            return false;
+        };
+        function cancel(){
+            $("#over-lay").hide();
+            $("#addCart").show();
+            $("#adding").hide();
+            return false;
+        };
+        function getMoreCommont(){
+            $("#getMore").hide();
+            $("#getLoading").show();
+            var index=parseInt($("#index").val());
+            index++;
+            $("#index").val(index);
+            var styleId=parseInt($("#styleId").val());
+            var html='';
+            $.post('/ajax/GetProductComment/',{'id':styleId,'index':index,'size':5},function(data){
+                $.each(data,function(index,item){
+                    html+='<div class="comment"><p class="review-uInfo clear"><span class="name">来自:'+item.UserName+'</span><span class="date">'+item.AddTime+'</span></p><p class="cont">'+item.Content+'</p>'+createCommentPicHtmlStr(item.CommentPics);
+                    if(item.CommentReply && item.CommentReply.Content){ //是否有官方回复
+                        html += '<p class="comment-reply"><span class="vancl-reply">官方回复：</span><span>'+ item.CommentReply.Content +'</span></p>';
+                    }
+                    html += '</div>';    
+                });
+                $("#more").before(html);
+                $("#getLoading").hide();
+                if(data.length<5){
+                    $("#more").hide();
+                }else{
+                    $("#getMore").show();
+                }
+
+                showFScreenImg(); //绑定评论图片全屏显示
+            });
+        };
+        function getMoreQuestion(){
+            $("#getMore").hide();
+            $("#getLoading").show();
+            var index=parseInt($("#indexQ").val());
+            index++;
+            $("#indexQ").val(index);
+            var styleId=parseInt($("#styleId").val());
+            var html='';
+            $.post('/ajax/GetProductQuestions/',{'id':styleId,'index':index,'size':5},function(data){
+                $.each(data,function(index,item){
+                    html+='<div class="quest-wrap"><p class="question">问:'+item.Content+'</p></div><div class="questioninfo clear"><span class="name">用户:'+item.UserName+'</span><span class="date">'+item.AddTime+'</span></div><div class="rep-wrap"><p class="reply">'+item.retext+'</p></div>';    
+                });
+                $("#more").before(html);
+                $("#getLoading").hide();
+                if(data.length<5){
+                    $("#more").hide();
+                }else{
+                    $("#getMore").show();
+                }
+                
+            });
+        }
+        function subAsk(){
+            var cont=$("#cont").val();
+            var styleId=$("#styleId").val();
+            var pCode=$("#pCode").val();
+            if(cont.trim()==""){
+                showTips("内容不能为空");
+                return false;
+            }
+            $.post("/style/StyleQuestion",{ "styleId": styleId, "pcode": pCode, sync: true, "AskContent": cont },
+                function (data) {  
+                    if(data.v){ 
+                        showTips("提交成功");
+                        $("#cont").val("");
+                    }else{
+                       showTips("请先登录,再提交"); 
+                       $("#cont").val("");
+                    }
+                }
+            );
+        };
+
+        function changeTab(obj,i){
+            $("#tableWrap").hide();
+            $(obj).siblings().removeClass("active");
+            $(obj).addClass("active");
+            var jsonData=$.parseJSON($("#jsonPicText").val());
+            $.each(jsonData,function(index,item){
+                if(i==index){   
+                    var htmlStr="";
+                    for(var j=0;j<item.PicUrl.length;j++)
+                    {
+                        htmlStr+="<img src=\""+item.PicUrl[j]+"\" />";
+                    }                 
+                    $("#prd-des-cont").html(htmlStr);
+                    return false;
+                }
+            });
+
+        }
+
+        // 全屏显示评论图片
+        function showFScreenImg(){
+            $('.commentPics > li').on('click', 'img', function(event) {
+                // event.preventDefault();
+                event.stopPropagation();
+                var curImgSrc = $(this).attr('src');
+                $('#showFScreenImg > img').attr('src', curImgSrc);
+                $('#showFScreenImg').css('display','-webkit-box');
+            });
+            $('#showFScreenImg').on('click', function(event) {
+                // event.preventDefault();
+                /* Act on the event */
+                $(this).hide();
+            });
+        }
+    </script> </body> </html>

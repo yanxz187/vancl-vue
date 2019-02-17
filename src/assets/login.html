@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="header_top">
+            <a href="my.html">取消</a>
+            <p>登录</p> 
+        </div>
+        <div class="header_bottom">
+            <ul>
+                <li class="focus">普通登录</li>
+                <li>验证码登录</li>
+            </ul>
+        </div>
+    </header>
+    <!-- 中部 -->
+    <section>
+        <div class="ptlogin show">
+            <h4>凡客</h4>
+            <form action="">
+                <div class="info">
+                    <input type="text" class="username" placeholder="账号（邮箱或手机号）">
+                    <input type="password"  class="userps" placeholder="密码">
+                </div>
+                <input type="submit" value="登录" class="sub">
+            </form>
+            <p>
+                <a href="reg.html">快速注册</a>
+                <a href="#">手机找回密码&gt;</a>
+            </p>
+        </div>
+        <div class="ptlogin">
+            <h4>凡客</h4>
+            <form action="">
+                <div class="info">
+                    <input type="text" class="username" placeholder="请输入您的手机号">
+                    <input type="text" class="userps" placeholder="短信验证码">
+                    <input type="button" class="btn" value="获取短信验证码">
+                </div>
+                <input type="submit" value="登录" class="sub">
+            </form>
+            <p>
+                <a href="reg.html">快速注册</a>
+                <a href="#">手机找回密码&gt;</a>
+            </p>
+        </div>
+    </section>
+    <!-- 尾部 -->
+    <footer>
+        <div class="title">
+            <div class="xian"></div>
+            <p>使用其他账号</p>
+            <div class="xian"></div>
+        </div>
+        <div class="bottom">
+            <a href="#"><img src="img/weixin.png" alt=""></a>
+            <a href="#"><img src="img/qq.png" alt=""></a>
+            <a href="#"><img src="img/weibo.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="js/tools.js"></script>
+<script>
+    // 头部 js
+    let lis = $(".header_bottom")[0].children[0].children;
+    let divs = $("section")[0].children;
+    // console.log(lis);
+    for(let i = 0; i < lis.length; i ++){
+        lis[i].setAttribute("index",i);
+        lis[i].onclick = function(){
+            for(let j = 0; j < lis.length; j ++){
+                lis[j].className = "";
+            }
+            this.className = "focus";
+            for(let k = 0; k < divs.length; k ++){
+                divs[k].className = "ptlogin";
+            }
+            divs[this.getAttribute("index")].className = "ptlogin show";
+        }
+    }
+
+</script>

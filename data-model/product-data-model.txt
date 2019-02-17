@@ -1,0 +1,26 @@
+product-data:{
+    banner£º{
+	imgs:[]
+	}
+    info:{
+	title:"",
+	oldprice: ,
+	newprice: 
+	}
+    section:{
+	sec-top:["","",""],
+	sec_bottom:[
+		[30¸öÍ¼Æ¬],
+		[
+		  {content:"",user:"",time:""}£¬
+		  {content:"",user:"",time:""}£¬
+		  {content:"",user:"",time:""}
+		],
+		[
+		  {content:"",user:"",hufu:"",time:""}£¬
+		  {content:"",user:"",hufu:"",time:""}£¬
+		  {content:"",user:"",hufu:"",time:""}
+		]
+	   ]
+	}
+}

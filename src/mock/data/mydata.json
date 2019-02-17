@@ -1,0 +1,31 @@
+{
+  "dingdan":[
+    {"img":"dingdan","title":"进行中"},
+    {"img":"dingdan","title":"已完成"},
+    {"img":"dingdan","title":"待评价"},
+    {"img":"dingdan","title":"无效"}
+  ],
+  "fuwu":[
+    [
+      {"img":"qianbao","title":"充值","futitle": "充100返100"},
+      {"img":"qianbao","title":"签到"},
+      {"img":"qianbao","title":"优惠券"},
+      {"img":"qianbao","title":"我的积分"}
+    ],
+    [
+      {"img":"qianbi","title":"私人订制"},
+      {"img":"qianbi","title":"我的收藏"},
+      {"img":"qianbi","title":"最近浏览"},
+      {"img":"qianbi","title":"我的评论"}
+    ],
+    [
+      {"img":"qianbi","title":"我的提问"}
+    ]
+  ],
+  "kefu":[
+    {"img":"erji","title":"在线客服"},
+    {"img":"erji","title":"地址"},
+    {"img":"erji","title":"投诉建议"},
+    {"img":"erji","title":"帮助中心"}
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "username":"",
+  "state":true,
+  "productList":[
+    {
+      "state":true,
+      "img":"6379070-1j201710271718344293",
+      "title":"家居鞋 针织全包款 1758 灰色",
+      "attr":{
+        "color":"灰色",
+        "size":"40-41"
+      },
+      "newprice":88,
+      "oldprice":98,
+      "num":1
+    },
+    {
+      "state":true,
+      "img":"6378261-1j201709211359324069",
+      "title":"凡客衬衫 吉国武 免烫 温莎领 4.0 白色",
+      "attr":{
+        "color":"蓝色",
+        "size":"M"
+      },
+      "newprice":298,
+      "oldprice":398,
+      "num":1
+    },
+    {
+      "state":true,
+      "img":"6375881-1j201702281503335949",
+      "title":"凡客帆布鞋 男款 藏蓝色",
+      "attr":{
+        "color":"藏蓝色",
+        "size":"40"
+      },
+      "newprice":138,
+      "oldprice":198,
+      "num":1
+    }
+  ],
+  "money": {
+    "needmoney":0,
+    "totalmoney":0,
+    "totalnum":0
+  }
+}
